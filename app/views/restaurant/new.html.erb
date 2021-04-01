@@ -2,6 +2,25 @@
 
 <%= form_for(Restaurant.new) do |form| %>
 
+	<%= form.label :標題 %>
+	<%= form.text_field :title %>
+
+	<%= form.label :電話 %>
+	<%= form.text_field :tel %>
+
+	<%= form.label :伊媚兒 %>
+	<%= form.text_field :email %>
+
+	<%= form.label :地址 %>
+	<%= form.text_field :address %>
+
+	<%= form.label :備註 %>
+	<%= form.text_area :description %>
+
+	<%= form.submit %>
+<% end %>
+
+<!-- 
 <form action="/restaurant_list" method="post">
 
   <input type="hidden"
@@ -15,4 +34,4 @@ email<input type="text"> <br>
 <label for="">描述<textarea name="" id="" cols="30" rows="10"></textarea></label> <br>
 <button>送出</button>  
 
-<input type="submit" value="新增">
+<input type="submit" value="新增"> -->
