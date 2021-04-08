@@ -1,24 +1,6 @@
 <h1>新增餐廳</h1>
 
-<%= form_for(Restaurant.new) do |form| %>
-
-	<%= form.label :標題 %>
-	<%= form.text_field :title %>
-
-	<%= form.label :電話 %>
-	<%= form.text_field :tel %>
-
-	<%= form.label :伊媚兒 %>
-	<%= form.text_field :email %>
-
-	<%= form.label :地址 %>
-	<%= form.text_field :address %>
-
-	<%= form.label :備註 %>
-	<%= form.text_area :description %>
-
-	<%= form.submit %>
-<% end %>
+<%= render 'hello' %>
 
 <!-- 
 <form action="/restaurant_list" method="post">
